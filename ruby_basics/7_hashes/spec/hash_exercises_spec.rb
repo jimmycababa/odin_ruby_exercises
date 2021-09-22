@@ -20,7 +20,7 @@ RSpec.describe 'Hash Exercises' do
 
   describe 'favorite color exercise' do
 
-    xit 'returns a string' do
+    it 'returns a string' do
       my_favorites = { color: 'blue', number: 65 }
       expect(favorite_color(my_favorites)).to eq('blue')
     end
@@ -30,7 +30,7 @@ RSpec.describe 'Hash Exercises' do
       expect(favorite_color(my_favorites)).to eq(['orange', 'green'])
     end
 
-    xit 'returns nil when the key is not found' do
+    it 'returns nil when the key is not found' do
       my_favorites = { number: 21, movie: 'Avengers: Endgame' }
       expect(favorite_color(my_favorites)).to eq(nil)
     end
@@ -38,7 +38,7 @@ RSpec.describe 'Hash Exercises' do
 
   describe 'favorite number exercise' do
 
-    xit 'returns an integer' do
+    it 'returns an integer' do
       my_favorites = { color: 'blue', number: 65 }
       expect(favorite_number(my_favorites)).to eq(65)
     end
